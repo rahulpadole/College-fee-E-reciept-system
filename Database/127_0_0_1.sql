@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Mar 27, 2025 at 10:47 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -48,17 +40,7 @@ CREATE TABLE `payments` (
 --
 
 INSERT INTO `payments` (`id`, `payment_id`, `student_id`, `name_of_student`, `email`, `branch`, `year`, `particulars_fee`, `amount`, `payment_method`, `payment_date`) VALUES
-(1, '171220021304', '20231068030140', 'Rahul Padole', 'rahulpadole2004@gmail.com', 'CSE', '3', 'Tuition fees', 20000.00, 'Online', '2025-03-26 12:51:51'),
-(2, '171220021304', '20231068030141', 'Shama', 'achal.kamble93@gmail.com', 'CSE', '3', 'Tuition fees', 10000.00, 'Online', '2025-03-27 10:18:23'),
-(3, '121314', '20231068030141', 'Shama', 'prachitideshpande@gmail.com', 'CSE', '3', 'Tuition fees', 10000.00, 'Online', '2025-03-27 10:19:00'),
-(4, '252525', '20231068030141', 'Shama', 'prajwalnakhate6@gmail.com', 'CSE', '3', 'Tuition fees', 5000.00, 'Online', '2025-03-27 10:20:31'),
-(5, '12345789', '20231068030142', 'Goma', 'achal.kamble93@gmail.com', 'CSE', '3', 'Tuition fees', 10000.00, 'Online', '2025-03-27 10:22:24'),
-(6, '12345789', '20231068030142', 'Goma', 'achal.kamble93@gmail.com', 'CSE', '3', 'Tuition fees', 10000.00, 'Online', '2025-03-27 10:26:17'),
-(7, '121314', '20231068030142', 'Goma', 'prachitideshpande@gmail.com', 'CSE', '3', 'Tuition fees', 20000.00, 'Online', '2025-03-27 10:28:22'),
-(8, '121314', '20231068030142', 'Goma', 'rahulpadole2004@gmail.com', 'CSE', '3', 'Tuition fees', 7500.00, 'Online', '2025-03-27 10:28:48'),
-(9, '252525', '20231068030142', 'Goma', 'prachitideshpande@gmail.com', 'CSE', '3', 'Tuition fees', 50000.00, 'Online', '2025-03-27 10:30:54'),
-(10, '12345789', '20231068030143', 'Tima', 'rahulpadole2004@gmail.com', 'CSE', '3', 'Uniform fee', 20000.00, 'Online', '2025-03-27 10:32:04'),
-(11, '121314', '20231068030143', 'Tima', 'prajwalnakhate6@gmail.com', 'EE', '3', 'Tuition fees', 5000.00, 'Online', '2025-03-27 10:32:39');
+
 
 -- --------------------------------------------------------
 
@@ -83,13 +65,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `role`, `mobile_number`, `student_id`, `is_approved`, `first_name`) VALUES
 (8, '9112695897', '$2y$10$dxYpl0jhpKjhq18FJv5J7OKnU/vVh06GJZEv8jYasX1iAB0L6Ppx2', 'admin', '9112695897', '', 1, 'Rahul'),
-(21, '20231068030140', '$2y$10$4UUQ5jdxyuA9hFeY3kniO.Ws8a0DkkaGhQQDiAtf38VarX5sCR8iS', 'user', '', '20231068030140', 1, 'omkar gate'),
-(23, '20231068030139', '$2y$10$koY5/foTCNkp7MrVy7SPCOs22eWTKxf61vgsVli//MsO1V5rT6jB6', 'user', '', '20231068030139', 1, 'Pavan'),
-(24, '20231068030141', '$2y$10$9liGb7TkwQzeYcJKqSgLO.eu2FDN7C631BHKyffFPXUfPaBH3qFuW', 'user', '', '20231068030141', 1, 'shama'),
-(25, '20231068030142', '$2y$10$a1TcJY3V36RqTP9xsWxBPuF3AFm/LBnSgps7e7Ql5N8x3oId5Qmhu', 'user', '', '20231068030142', 1, 'goma'),
-(26, '20231068030143', '$2y$10$sdqXlXhChFt4EOI8LwNfXOMuuB0StlK1.7nsFYBpBdzYmU/AzajX2', 'user', '', '20231068030143', 1, 'tima'),
-(27, '20231068030144', '$2y$10$6hV3Zvpp1f/iP4mGwaf0dOqv9CdQlh2ErFf/xze0m0pSA9OUIBuAy', 'user', '', '20231068030144', 1, 'shirpat'),
-(28, '20231068030145', '$2y$10$6Q9f6GKSIQ.295Ha7RJ3AOAS1aQuM8.dKqXO/.D3LyfSmmDaIM1V6', 'user', '', '20231068030145', 1, 'ravan');
+
 
 --
 -- Indexes for dumped tables
